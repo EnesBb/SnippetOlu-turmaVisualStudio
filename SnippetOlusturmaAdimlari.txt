@@ -1,0 +1,16 @@
+﻿1=> Öncelikle bir projede bir xml dosyası(xml file) acıyoruz(bu dosyanın .snippet uzantısına sahip olması zorunludur. Yoksa snippet dosyanız asla gözükmez..)
+
+2=> Sonra bu dosyanın icerisinde sag tıklayarak insert snippet secenegini seciyoruz ve karsımıza xml snippet sablonu cıkıyor.
+
+3=> Cıkan bu sablonda author(Yazar),description(Açıklama),title(Başlık),shortcut(Kısayol Örnek(sing)) gibi tagler olacaktır. İsterseniz bunları belirleyebilirsiniz..
+
+4=>CData kısmının hemen üzerinde CodeLanguage XML olarak gelecektir.. Bunu düzgün bir şekilde o snippet'i hangi dilde kullanmak istiyorsanız ona cekmeniz gerekiyor.
+
+5=> Declaration..Eger snippetiniz icerisinde tab ile geciş yapabilmek istiyorsanız Declaration icerisinde tanımlı olan Literaller aracılıgı ile ve bu literallere bir id ve deger vererek bunu saglayabilirsiniz. Unutmayın Declaration ID'leri $$ sembolleri arasına yazılmadıgı takdirde calısmaz. 
+
+6=>Snippet kısmı bittikten sonra projenizi kaydedin. Sonra Tools sekmesinden code snippet manager'i secin. Acılan pencerede üstteki combobox'a dikkat edin ve hangi dilde olusturduysanız o snippet'in dilini secin.. My Snippets kesimine import gercekleştirin..
+
+7=> Acılan pencereden snippet dosyanız neredeyse o dosyayı bularak secmeniz gerekiyor. Sonra finish deyin..
+
+8=> Eger snippet'iniz cıkmıyorsa projenizi kapatıp tekrar acın..Snippet görülecektir..
+

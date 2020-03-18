@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>SingletonSample</Title>
+    <Author>CY</Author>
+    <Shortcut>samp</Shortcut>
+    <Description>Singleton for Testing Purposes</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      
+      <Literal>
+        <ID>name</ID>
+        <Default>DBTool</Default>
+      </Literal>
+      
+      <Literal>
+        <ID>databaseClass</ID>
+        <Default>NorthwindEntities</Default>
+      </Literal>
+      
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[
+            
+               private $name$() {}
+               
+               private static $databaseClass$ _dbInstance;
+               
+               public static $databaseClass$ DBInstance
+               {
+                     get
+                     {
+                            if(_dbInstance == null)
+                            {
+                                _dbInstance = new $databaseClass$();
+                            }
+                            
+                            return _dbInstance;
+                     
+                     }
+               }
+      
+      ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
